@@ -1,5 +1,3 @@
-// This module implements a Processing Element (PE). It performs an 8-bit
-// multiply-accumulate operation.
 
 `default_nettype none
 
@@ -17,7 +15,6 @@ module pe
   , output var logic [31:0] o_y
   );
 
-  // {{{ MAC
 
   logic [31:0] mult;
 
@@ -37,10 +34,6 @@ module pe
 
   always_comb
     o_y = mac_q;
-
-  // }}} MAC
-
-  // {{{ Register inputs and assign them to outputs
 
   logic [7:0] a_q, b_q;
 
@@ -65,8 +58,6 @@ module pe
 
   always_comb
     o_b = b_q;
-
-  // }}} Register inputs and assign them to outputs
 
 endmodule
 
