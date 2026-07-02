@@ -1,19 +1,3 @@
-// This module interconnects the PEs to form a systolic array. Below, is an
-// example of how PEs in a 4x4 systolic array are interconnected. The horizontal
-// lines represent row interconnects, and the vertical lines represent column
-// interconnects. The arrows indicate the direction of data flow.
-
-// PE[0][0] --> PE[0][1] --> PE[0][2] --> PE[0][3]
-//   |            |            |            |
-//   v            v            v            v
-// PE[1][0] --> PE[1][1] --> PE[1][2] --> PE[1][3]
-//   |            |            |            |
-//   v            v            v            v
-// PE[2][0] --> PE[2][1] --> PE[2][2] --> PE[2][3]
-//   |            |            |            |
-//   v            v            v            v
-// PE[3][0] --> PE[3][1] --> PE[3][2] --> PE[3][3]
-
 `default_nettype none
 
 module systolicArray
